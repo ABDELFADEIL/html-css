@@ -1,0 +1,50 @@
+body {
+    background: #f7f7f7;
+}
+
+.vert{
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transform-origin: 50% 50%;
+    -webkit-animation: fadeil .7s linear infinite backwards;
+
+
+
+}
+
+.bleu {
+    background: grey;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 380px;
+    left: 30px;
+    animation: fadeil1 1s linear infinite backwards reverse;
+
+}
+/* #vert {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+  */
+@keyframes fadeil {
+    from{
+        -webkit-transformm: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+ 
+@keyframes fadeil1 {
+    to{margin-left: -800px}
+    from{margin-left: 800px}
+}
+/* .vert {
+    -webkit-animation: rotating 2s linear infinite;
+} */

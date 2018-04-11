@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background: purple;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}
+figure.logo {
+    width: 250px;
+    height: 100px;
+    background: red;
+}
+.couleur {
+    background: purple;
+}
+.navbar {
+    position: absolute;
+    color: black;
+    right: 10px;
+    top: 0;
+    height: 100px;
+}
+section.slider { 
+    height: 500px;
+    background: black;
+}
+.navbar-light .navbar-nav .navbar-link {
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: powderblue;
+}
+section.yannick, section.yohann, section.farouk, section.badou, section.abdelfadeil, section.houssamaddine
+{
+    display: flex;
+    width: 100%;
+    background: black;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+article.content {
+    width: 400px;
+    height: 300px;
+    background: grey;
+    min-width: 320px;
+    border: 3px solid rgb(12, 1, 1); 
+    flex: 1;   
+}
+
+article.content2 {
+    width: 400px;
+    height: 300px;
+    background: orange;
+    min-width: 320px;
+    border: 3px solid black; 
+    flex: 1;   
+}
+table#badou {
+    width: 100%;
+    background: white;
+    
+}
+tr {
+    width: 100%;
+    background: green;
+}
+   
+    tr:nth-child(2){background: yellow}
+    tr:nth-child(3){background: azure}
+}
+
+article.content3 {
+    width: 300px;
+    height: 300px;
+    background: beige;
+    min-width: 320px;
+    border: 3px solid black; 
+    flex: 1;   
+}
+/* section.abdelfadeil {
+    height: 360px;
+    width: 320px;
+    margin: 5px;
+} */
+
+.cart{max-width:320px}
+.cart{perspective:750px} /* c'est la perspective qui fait effet 3d genre la carte te gifle*/
+.cart:hover .main{transform: rotateY(180deg);
+    transform-origin: 160px 0;  /*160=moitié de 360 = centre de rotation. verticalité y=0*/
+
+}
+.cart img {
+    width: 320px;
+    height: 360px;
+    border-radius: 5px;  
+
+}
+
+    .cart, .devant, .arr{
+    width:320px;
+    height:360px;
+    border-radius: 5px;
+}
+
+ .main{ transition: .6s;
+  transform-style: preserve-3d /* fait comprendre qu'il ya 2 faces*/
+}
+
+  .devant, .arr{
+    backface-visibility:hidden;
+    position: absolute; 
+    top:0;
+    left:0
+
+
+ }
+
+.devant{
+    z-index: 2;
+    transform: rotateY(0deg);
+    background: red;
+    height: 360px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 5px; 
+    margin: 5px;
+}
+
+ .arr{
+    transform: rotateY(180deg);
+    border: 1px solid black;
+    background: black;
+    border-radius:10px;
+    margin: 5px;
+    padding:25px;
+    color:white;
+    text-align: center;
+    height: 360px;
+    width: 320px;
+    border-radius: 5px; 
+
+}
+
+    a:savoir{display: block;
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    background:orange;
+    margin: 50px auto 0px;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color:black;
+}
+section.abdelfadeil {height: 370px;}
+
+    a.savoir:hover{background:orangered}
+
+    aside.houssamaddine {
+        background: black;
+        display: flex;
+        width: 100%;
+        /* background: black; */
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    p.dog {
+        width: 380px;
+        height: auto;
+        color: beige;
+        text-align: justify;
+    }
+    footer {
+         display: flex; 
+         flex-wrap: row wrap;
+         background: black;
+
+
+    }
+    div.footer {
+        width: 33.33%;
+        min-width: 320px;
+        height: 300px;
+        border: 1px solid black;
+    }
+    h3 { 
+        font-size: 60px;
+        text-align: center;
+    }
+    h4 { 
+        font-size: 20px;
+        color: white;
+    }
+    h4~p {
+        color: antiquewhite;
+        text-align: center;
+    }
+    section.yannick {
+        padding-top: 10px;
+    }
+    h3~p {
+        color: antiquewhite;
+    }
+    article.content {
+        width: 400px;
+        height: 300px;
+        background: black;
+        min-width: 320px;
+        border: 3px solid white; 
+        flex: 1;
+        padding-top: 85px;   
+    }
+
+
+/* ordre general */
+/* grand ecran */
+@media screen and (min-width:992px) {
+    /* ici on code apparence */
+     table#badou {
+        width: 80%;
+        background: white;
+    }
+    td {
+        border: 1px solid black;
+        width: 25%;
+    }
+    tr {
+        width: 100%;
+        background: green;
+    }
+       
+        tr:nth-child(2){background: yellow}
+        tr:nth-child(3){background: azure}
+
+    
+}
+/* ecran moyne */
+@media screen (min-width:768px) and (max-width:991px)  {
+    /* ici on code apparence */
+    nav.couleur {
+        background: black;
+        width: auto;
+        height: auto;
+    }
+    hr{
+        width: 100%;
+        border: 1px solid white;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    section.slider {
+        visibility: hidden;
+        height: auto;
+        background: black;
+    }
+    .navbar {top: 20px; }
+    table#badou {
+        width: 80%;
+        height: auto;
+        background: white;
+    }
+    td {
+        border: 1px solid black;
+        width: 50%;
+        min-width: 320px;
+    }
+    tr {
+        height: 200px;
+        width: 100%;
+    }
+}
+/* ecran petit */
+@media screen and (max-width:767px) {
+    /* ici on code apparence */
+}

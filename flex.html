@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        article {
+            width: 320px;
+            height: 500px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 18px black;
+            margin: 20px;
+        }
+        figure.gris {
+            display: block;
+            border-radius: 5px;
+            background: black;
+            margin: 2px;
+            height: 300px;
+            width: 316px;
+            overflow: hidden;
+            filter: grayscale(1);
+            /* filter: blur(10px); */
+            transition: 500ms;
+        }
+         figure.gris:hover {
+             filter: grayscale(0);}
+        p {
+            width: 300px;
+            height: 120px;
+            overflow: auto;
+            margin: 8px 10px 0px;
+            background: snow;
+            text-align: center;
+        }
+
+        button {
+            width: 80px;
+            height: auto;
+            background: transparent;
+            margin: 10px 0 0 10px;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        button:hover {
+            background: black;
+            color: white;
+        }
+        section.debut {
+            background: grey;
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; */
+
+
+        }
+        article:nth-child(2){background: orange;
+        /* align-self: flex-end; */
+        order: 2;
+    
+    }
+        article:nth-child(3){background: blue;
+        /* flex-grow: 1; */
+    }
+    ul{
+        width: 100%;
+        border: 1px solid black;;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none; 
+    }
+    li {
+        background: orange;
+        width: 20%;
+        min-width: 320px;
+        display: block;
+        height: 240px;
+        line-height: 40px;
+        text-align: center;
+        flex: 1;
+    }
+    
+    li:nth-child(2) {
+        background: blue;
+    }
+    li:nth-child(3) {
+        background: gray;
+    }
+    li:nth-child(4) {
+        background: pink;
+    }
+    li:nth-child(5) {
+        background: purple;
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <section class="debut">
+        <article class="yohan">
+            <figure class="gris">
+                <img src="img151.jpg" alt="">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                 facilis necessitatibus itaque inventore mollitia adipisci quae laborum!
+                  Impedit cumque et porro ratione fugit velit rem. Aut iusto
+                   harum alias distinctio.</p>
+            <button>View</button>
+            <button> Edite</button>
+        </article>
+        <article class="yohan">
+                <figure class="gris">
+                    <img src="img151.jpg" alt="">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                     facilis necessitatibus itaque inventore mollitia adipisci quae laborum!
+                      Impedit cumque et porro ratione fugit velit rem. Aut iusto
+                       harum alias distinctio.</p>
+                <button>View</button>
+                <button> Edite</button>
+            </article>
+            <article class="yohan">
+                    <figure class="gris">
+                        <img src="img151.jpg" alt="">
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                         facilis necessitatibus itaque inventore mollitia adipisci quae laborum!
+                          Impedit cumque et porro ratione fugit velit rem. Aut iusto
+                           harum alias distinctio.</p>
+                    <button>View</button>
+                    <button> Edite</button>
+                </article>
+    </section>
+
+    <ul>
+
+        <li>orange</li>
+        <li>blue</li>
+        <li>gray</li>
+        <li>rose</li>
+        <li>violet</li>
+
+    </ul>
+    
+</body>
+</html>

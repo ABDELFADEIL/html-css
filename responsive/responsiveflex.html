@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex css</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background: red;
+            color: white;
+            padding-left: 10px;
+            width: 100%;
+            height: 100px;
+        }
+        h4 {margin-top: 20px;}
+        ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            /* color: black; */
+            align-content: center;
+            text-align: center;
+            padding: 15px;
+            /* justify-content: center; */
+
+        }
+        /* a {
+            color: black;
+            text-decoration: none;
+        }
+        li {
+            margin: 10px;
+            /* text-align: center; */
+           
+        /* }
+        nav {
+            width: 100%;
+            height: 50px;
+            background: white;
+        } */
+
+        .navbar {
+            height: 50px;
+        }
+        .section { */
+            width: 100%;
+            height: 400px;
+            display: flex;
+        }
+        .article1 {
+            width: 50%;
+            height: 400px;
+            background: grey;
+            padding: 10px;
+            border: 1px solid black;
+            background-image: url(img151.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+
+
+        }
+        .article2 {
+            width: 50%;
+            height: 400px;
+            background: #85790D;
+            padding: 10px;
+            border: 1px solid black;
+
+
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Super</h1>
+            <h4>site en flex</h4>
+    </header>
+    <!-- <nav>
+        <ul>
+            <a href="#"><il>Home</il></a>
+            <a href="#"><il>About</il></a>
+            <a href="#"><il>Cervices</il></a>
+            <a href="#"><il>Works</il></a>
+        </ul>
+    </nav> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Works</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section class="section">
+        <article class="article1">
+            <!-- <img src="img151.jpg" alt=""> -->
+            <div>WHATEVER IT TAKES</div>
+        </article>
+        <article class="article2">
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Neque inventore perspiciatis aut minima quae eos expedita dolorum.
+                  A doloribus ullam animi asperiores. Fuga, quod. Perspiciatis magni
+                   reiciendis incidunt error nihil.</p>
+                   <div>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Neque consequatur dolores, delectus sapiente quasi error
+                             totam hic nobis sunt eum ad dignissimos vel odio ducimus 
+                             temporibus! Ab aliquam accusantium voluptates?</p>
+                   </div>
+                   <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                       Exercitationem recusandae expedita suscipit nam optio tempora 
+                       aut voluptates voluptas corporis rerum, voluptatum nostrum sit 
+                       quia velit nulla quam aperiam minima commodi?</div>
+                   <footer></footer>
+        </article>
+    </section>
+
+
+    
+    
+</body>
+</html>
